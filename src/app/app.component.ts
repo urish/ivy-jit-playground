@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ivy-jit-playground';
+  counter = 0;
+
+  startCounter() {
+    this.counter = 1;
+    setInterval(() => this.counter++, 1000);
+  }
 }
